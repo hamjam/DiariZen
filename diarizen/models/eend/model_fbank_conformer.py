@@ -9,7 +9,7 @@ import torch.nn as nn
 
 from functools import lru_cache
 
-from pyannote.audio.core.model import Model as BaseModel
+from diarizen_pyannote.audio.core.model import Model as BaseModel
 
 from diarizen.models.module.conformer import ConformerEncoder
 from diarizen.models.module.speechbrain_feats import Fbank

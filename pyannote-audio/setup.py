@@ -33,15 +33,15 @@ elif sha != "Unknown":
     version += "+" + sha[:7]
 print("-- Building version " + version)
 
-version_path = ROOT_DIR / "pyannote" / "audio" / "version.py"
+version_path = ROOT_DIR / "diarizen_pyannote" / "audio" / "version.py"
 
 with open(version_path, mode="w", encoding="utf-8") as f:
     f.write("__version__ = '{}'\n".format(version))
 
 if __name__ == "__main__":
     setup(
-        name="pyannote.audio",
-        namespace_packages=["pyannote"],
+        name="diarizen_pyannote.audio",
+        namespace_packages=["diarizen_pyannote"],
         version=version,
         packages=find_packages(),
         install_requires=requirements,

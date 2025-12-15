@@ -1,7 +1,7 @@
 import pytest
 from IPython.display import Audio
 
-from pyannote.audio.utils.preview import listen
+from diarizen_pyannote.audio.utils.preview import listen
 from pyannote.core import Segment
 from pyannote.database import FileFinder, get_protocol
 
