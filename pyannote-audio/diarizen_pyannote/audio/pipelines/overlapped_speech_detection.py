@@ -29,7 +29,7 @@ import numpy as np
 from pyannote.core import Annotation, SlidingWindowFeature, Timeline
 from pyannote.database import get_annotated
 from pyannote.metrics.detection import DetectionPrecisionRecallFMeasure
-from diarizen_pyannote.pipeline.parameter import Uniform
+from pyannote.pipeline.parameter import Uniform
 
 from diarizen_pyannote.audio import Inference
 from diarizen_pyannote.audio.core.io import AudioFile

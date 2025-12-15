@@ -25,10 +25,10 @@ from typing import Optional
 
 import hydra
 from omegaconf import DictConfig
-from diarizen_pyannote.database import FileFinder, ProtocolFile, registry
+from pyannote.database import FileFinder, ProtocolFile, registry
 from rich.progress import Progress
 
-from pydiarizen_pyannoteannote.audio import Inference, Model
+from diarizen_pyannote.audio import Inference, Model
 from diarizen_pyannote.audio.pipelines.utils import get_devices
 from diarizen_pyannote.audio.utils.metric import DiscreteDiarizationErrorRate
 from diarizen_pyannote.audio.utils.signal import binarize
