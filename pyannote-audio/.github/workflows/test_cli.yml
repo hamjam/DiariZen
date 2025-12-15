@@ -25,7 +25,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install libsndfile1
-      - name: Install pyannote.audio
+      - name: Install diarizen_pyannote.audio
         run: |
           pip install -e .[dev,testing,cli]
       - name: Test with pytest

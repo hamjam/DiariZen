@@ -33,11 +33,11 @@ from huggingface_hub import hf_hub_download
 from huggingface_hub.utils import RepositoryNotFoundError
 from torch.nn.utils.rnn import pad_sequence
 
-from pyannote.audio import Inference, Model, Pipeline
-from pyannote.audio.core.inference import BaseInference
-from pyannote.audio.core.io import AudioFile
-from pyannote.audio.core.model import CACHE_DIR
-from pyannote.audio.pipelines.utils import PipelineModel, get_model
+from diarizen_pyannote.audio import Inference, Model, Pipeline
+from diarizen_pyannote.audio.core.inference import BaseInference
+from diarizen_pyannote.audio.core.io import AudioFile
+from diarizen_pyannote.audio.core.model import CACHE_DIR
+from diarizen_pyannote.audio.pipelines.utils import PipelineModel, get_model
 
 try:
     from speechbrain.pretrained import (
@@ -610,12 +610,12 @@ class ONNXWeSpeakerPretrainedSpeakerEmbedding(BaseInference):
 
 
 class PyannoteAudioPretrainedSpeakerEmbedding(BaseInference):
-    """Pretrained pyannote.audio speaker embedding
+    """Pretrained diarizen_pyannote.audio speaker embedding
 
     Parameters
     ----------
     embedding : PipelineModel
-        pyannote.audio model
+        diarizen_pyannote.audio model
     device : torch.device, optional
         Device
     use_auth_token : str, optional
@@ -716,7 +716,7 @@ def PretrainedSpeakerEmbedding(
     ----------
     embedding : Text
         Can be a SpeechBrain (e.g. "speechbrain/spkrec-ecapa-voxceleb")
-        or a pyannote.audio model.
+        or a diarizen_pyannote.audio model.
     device : torch.device, optional
         Device
     use_auth_token : str, optional
@@ -774,10 +774,10 @@ class SpeakerEmbedding(Pipeline):
     ----------
     embedding : Model, str, or dict, optional
         Pretrained embedding model. Defaults to "pyannote/embedding".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     segmentation : Model, str, or dict, optional
         Pretrained segmentation (or voice activity detection) model.
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
         Defaults to no voice activity detection.
     use_auth_token : str, optional
         When loading private huggingface.co models, set `use_auth_token`
@@ -786,7 +786,7 @@ class SpeakerEmbedding(Pipeline):
 
     Usage
     -----
-    >>> from pyannote.audio.pipelines import SpeakerEmbedding
+    >>> from diarizen_pyannote.audio.pipelines import SpeakerEmbedding
     >>> pipeline = SpeakerEmbedding()
     >>> emb1 = pipeline("speaker1.wav")
     >>> emb2 = pipeline("speaker2.wav")

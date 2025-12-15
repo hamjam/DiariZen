@@ -1,5 +1,5 @@
 # @package _group_
-_target_: pyannote.audio.models.segmentation.SSeRiouSS
+_target_: diarizen_pyannote.audio.models.segmentation.SSeRiouSS
 wav2vec: WAVLM_BASE
 wav2vec_layer: -1
 lstm:

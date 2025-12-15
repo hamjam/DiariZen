@@ -25,7 +25,7 @@ from typing import Optional
 import torch
 from torchmetrics import Metric
 
-from pyannote.audio.torchmetrics.functional.audio.diarization_error_rate import (
+from diarizen_pyannote.audio.torchmetrics.functional.audio.diarization_error_rate import (
     _der_compute,
     _der_update,
 )
@@ -41,7 +41,7 @@ class DiarizationErrorRate(Metric):
 
     Notes
     -----
-    While pyannote.audio conventions is to store speaker activations with
+    While diarizen_pyannote.audio conventions is to store speaker activations with
     (batch_size, num_frames, num_speakers)-shaped tensors, this torchmetrics metric
     expects them to be shaped as (batch_size, num_speakers, num_frames) tensors.
     """
@@ -128,7 +128,7 @@ class OptimalDiarizationErrorRate(Metric):
 
     Notes
     -----
-    While pyannote.audio conventions is to store speaker activations with
+    While diarizen_pyannote.audio conventions is to store speaker activations with
     (batch_size, num_frames, num_speakers)-shaped tensors, this torchmetrics metric
     expects them to be shaped as (batch_size, num_speakers, num_frames) tensors.
     """

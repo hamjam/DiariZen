@@ -1,5 +1,5 @@
 ---
-title: "How does one spell and pronounce pyannote.audio?"
+title: "How does one spell and pronounce diarizen_pyannote.audio?"
 alt_titles:
   - "Why the name of the library?"
   - "Why the logo of the library?"

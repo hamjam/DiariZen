@@ -6,8 +6,8 @@ import numpy as np
 
 from accelerate.logging import get_logger
 
-from pyannote.audio.utils.permutation import permutate
-from pyannote.audio.utils.loss import nll_loss
+from diarizen_pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.utils.loss import nll_loss
 
 from diarizen.trainer_dual_opt import Trainer as BaseTrainer
 

@@ -24,7 +24,7 @@
 from pyannote.database import FileFinder, Protocol, get_annotated
 from pyannote.database.protocol import SpeakerVerificationProtocol
 
-from pyannote.audio.core.io import Audio, get_torchaudio_info
+from diarizen_pyannote.audio.core.io import Audio, get_torchaudio_info
 
 get_duration = Audio(mono="downmix").get_duration
 

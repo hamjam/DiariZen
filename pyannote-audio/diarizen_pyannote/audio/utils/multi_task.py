@@ -23,7 +23,7 @@
 
 from typing import Any, Callable, Tuple, Union
 
-from pyannote.audio.core.model import Specifications
+from diarizen_pyannote.audio.core.model import Specifications
 
 
 def map_with_specifications(

@@ -27,7 +27,7 @@ import torch
 from torch_audiomentations.core.transforms_interface import BaseWaveformTransform
 from torch_audiomentations.utils.config import from_dict as augmentation_from_dict
 
-from pyannote.audio import Inference, Model
+from diarizen_pyannote.audio import Inference, Model
 
 PipelineModel = Union[Model, Text, Mapping]
 
@@ -65,7 +65,7 @@ def get_model(
 
     See also
     --------
-    pyannote.audio.core.model.Model.from_pretrained
+    diarizen_pyannote.audio.core.model.Model.from_pretrained
 
     """
 
@@ -120,7 +120,7 @@ def get_inference(inference: PipelineInference) -> Inference:
 
     See also
     --------
-    pyannote.audio.core.inference.Inference
+    diarizen_pyannote.audio.core.inference.Inference
 
     """
 

@@ -1,5 +1,5 @@
 # @package _group_
-_target_: pyannote.audio.tasks.MultiLabelSegmentation
+_target_: diarizen_pyannote.audio.tasks.MultiLabelSegmentation
 duration: 3.0
 warm_up: 0.0
 balance: null

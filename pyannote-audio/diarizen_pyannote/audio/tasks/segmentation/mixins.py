@@ -35,8 +35,8 @@ from torchaudio import AudioMetaData
 from torchmetrics import Metric
 from torchmetrics.classification import BinaryAUROC, MulticlassAUROC, MultilabelAUROC
 
-from pyannote.audio.core.task import Problem, Task, get_dtype
-from pyannote.audio.utils.random import create_rng_for_worker
+from diarizen_pyannote.audio.core.task import Problem, Task, get_dtype
+from diarizen_pyannote.audio.utils.random import create_rng_for_worker
 
 Subsets = list(Subset.__args__)
 Scopes = list(Scope.__args__)
@@ -337,7 +337,7 @@ class SegmentationTask(Task):
         target = y[:, warm_up_left : num_frames - warm_up_right : 10]
 
         # torchmetrics tries to be smart about the type of machine learning problem
-        # pyannote.audio is more explicit so we have to reshape target and preds for
+        # diarizen_pyannote.audio is more explicit so we have to reshape target and preds for
         # torchmetrics to be happy... more details can be found here:
         # https://torchmetrics.readthedocs.io/en/latest/references/modules.html#input-types
 
@@ -368,7 +368,7 @@ class SegmentationTask(Task):
             )
 
         elif self.specifications.problem == Problem.MONO_LABEL_CLASSIFICATION:
-            # TODO: implement when pyannote.audio gets its first mono-label segmentation task
+            # TODO: implement when diarizen_pyannote.audio gets its first mono-label segmentation task
             raise NotImplementedError()
 
         self.model.log_dict(

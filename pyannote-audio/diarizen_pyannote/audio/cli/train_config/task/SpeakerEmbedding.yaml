@@ -1,5 +1,5 @@
 # @package _group_
-_target_: pyannote.audio.tasks.SupervisedRepresentationLearningWithArcFace
+_target_: diarizen_pyannote.audio.tasks.SupervisedRepresentationLearningWithArcFace
 min_duration: 2.0
 duration: 5.0
 num_classes_per_batch: 512

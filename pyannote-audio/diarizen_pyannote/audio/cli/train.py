@@ -29,7 +29,7 @@ from hydra.utils import instantiate
 from lightning.pytorch import seed_everything
 from omegaconf import DictConfig, OmegaConf
 
-# from pyannote.audio.core.callback import GraduallyUnfreeze
+# from diarizen_pyannote.audio.core.callback import GraduallyUnfreeze
 from pyannote.database import FileFinder, registry
 from pytorch_lightning.callbacks import (
     EarlyStopping,
@@ -40,7 +40,7 @@ from pytorch_lightning.callbacks import (
 from pytorch_lightning.loggers import TensorBoardLogger
 from torch_audiomentations.utils.config import from_dict as get_augmentation
 
-from pyannote.audio.core.io import get_torchaudio_info
+from diarizen_pyannote.audio.core.io import get_torchaudio_info
 
 
 @hydra.main(config_path="train_config", config_name="config")

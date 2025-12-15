@@ -35,7 +35,7 @@ from pyannote.metrics.base import BaseMetric
 from pyannote.metrics.detection import DetectionPrecisionRecallFMeasure
 from pyannote.metrics.diarization import DiarizationErrorRate
 
-from pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.utils.permutation import permutate
 
 
 def discrete_diarization_error_rate(reference: np.ndarray, hypothesis: np.ndarray):

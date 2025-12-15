@@ -1,9 +1,9 @@
 import pytest
 from pyannote.database import FileFinder, get_protocol
 
-from pyannote.audio.core.model import Model
-from pyannote.audio.core.task import UnknownSpecificationsError
-from pyannote.audio.tasks import SpeakerDiarization
+from diarizen_pyannote.audio.core.model import Model
+from diarizen_pyannote.audio.core.task import UnknownSpecificationsError
+from diarizen_pyannote.audio.tasks import SpeakerDiarization
 
 
 @pytest.fixture()

@@ -30,7 +30,7 @@ from pyannote.database import Protocol
 from torch_audiomentations.core.transforms_interface import BaseWaveformTransform
 from torchmetrics import Metric
 
-from pyannote.audio.core.task import Task
+from diarizen_pyannote.audio.core.task import Task
 
 from .mixins import SupervisedRepresentationLearningTaskMixin
 

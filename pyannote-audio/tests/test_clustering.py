@@ -1,6 +1,6 @@
 import numpy as np
 
-from pyannote.audio.pipelines.clustering import AgglomerativeClustering
+from diarizen_pyannote.audio.pipelines.clustering import AgglomerativeClustering
 
 
 def test_agglomerative_clustering_num_cluster():

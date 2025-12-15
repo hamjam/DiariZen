@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# Script used to convert from WeSpeaker to pyannote.audio
+# Script used to convert from WeSpeaker to diarizen_pyannote.audio
 
 import sys
 from pathlib import Path
@@ -28,9 +28,9 @@ from pathlib import Path
 import pytorch_lightning as pl
 import torch
 
-import pyannote.audio.models.embedding.wespeaker as wespeaker
-from pyannote.audio import Model
-from pyannote.audio.core.task import Problem, Resolution, Specifications
+import diarizen_pyannote.audio.models.embedding.wespeaker as wespeaker
+from diarizen_pyannote.audio import Model
+from diarizen_pyannote.audio.core.task import Problem, Resolution, Specifications
 
 wespeaker_checkpoint_dir = sys.argv[1]  # /path/to/wespeaker_cnceleb-resnet34-LM
 

@@ -30,7 +30,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from asteroid_filterbanks import Encoder, ParamSincFB
 
-from pyannote.audio.utils.receptive_field import (
+from diarizen_pyannote.audio.utils.receptive_field import (
     multi_conv_num_frames,
     multi_conv_receptive_field_center,
     multi_conv_receptive_field_size,

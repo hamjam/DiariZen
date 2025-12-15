@@ -27,7 +27,7 @@ from typing import Optional, Tuple, Union
 import torch
 import torch.nn.functional as F
 
-from pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.utils.permutation import permutate
 
 
 def _der_update(

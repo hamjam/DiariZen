@@ -22,7 +22,7 @@
 
 
 def test_sample():
-    from pyannote.audio.sample import SAMPLE_FILE
+    from diarizen_pyannote.audio.sample import SAMPLE_FILE
 
     assert "annotation" in SAMPLE_FILE
     assert "annotated" in SAMPLE_FILE

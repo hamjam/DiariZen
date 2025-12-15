@@ -36,9 +36,9 @@ from scipy.cluster.hierarchy import fcluster, linkage
 from scipy.optimize import linear_sum_assignment
 from scipy.spatial.distance import cdist
 
-from pyannote.audio.core.io import AudioFile
-from pyannote.audio.pipelines.utils import oracle_segmentation
-from pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.core.io import AudioFile
+from diarizen_pyannote.audio.pipelines.utils import oracle_segmentation
+from diarizen_pyannote.audio.utils.permutation import permutate
 
 # VBx 
 from diarizen.clustering.VBx import vbx_setup, cluster_vbx

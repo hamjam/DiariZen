@@ -86,7 +86,7 @@ class VoiceActivityDetection(Pipeline):
     segmentation : Model, str, or dict, optional
         Pretrained segmentation (or voice activity detection) model.
         Defaults to "pyannote/segmentation".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     fscore : bool, optional
         Optimize (precision/recall) fscore. Defaults to optimizing detection
         error rate.
@@ -278,7 +278,7 @@ class AdaptiveVoiceActivityDetection(Pipeline):
 
     See also
     --------
-    pyannote.audio.pipelines.utils.get_inference
+    diarizen_pyannote.audio.pipelines.utils.get_inference
     """
 
     def __init__(

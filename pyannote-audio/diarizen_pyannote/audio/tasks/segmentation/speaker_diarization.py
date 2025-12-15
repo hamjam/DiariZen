@@ -50,9 +50,9 @@ from diarizen_pyannote.audio.torchmetrics import (
     OptimalSpeakerConfusionRate,
     SpeakerConfusionRate,
 )
-from pyannote.audio.utils.loss import binary_cross_entropy, mse_loss, nll_loss
-from pyannote.audio.utils.permutation import permutate
-from pyannote.audio.utils.powerset import Powerset
+from diarizen_pyannote.audio.utils.loss import binary_cross_entropy, mse_loss, nll_loss
+from diarizen_pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.utils.powerset import Powerset
 
 Subsets = list(Subset.__args__)
 Scopes = list(Scope.__args__)
@@ -870,10 +870,10 @@ def main(protocol: str, subset: str = "test", model: str = "pyannote/segmentatio
     from pyannote.database import FileFinder, get_protocol
     from rich.progress import Progress
 
-    from pyannote.audio import Inference
-    from pyannote.audio.pipelines.utils import get_devices
-    from pyannote.audio.utils.metric import DiscreteDiarizationErrorRate
-    from pyannote.audio.utils.signal import binarize
+    from diarizen_pyannote.audio import Inference
+    from diarizen_pyannote.audio.pipelines.utils import get_devices
+    from diarizen_pyannote.audio.utils.metric import DiscreteDiarizationErrorRate
+    from diarizen_pyannote.audio.utils.signal import binarize
 
     (device,) = get_devices(needs=1)
     metric = DiscreteDiarizationErrorRate()

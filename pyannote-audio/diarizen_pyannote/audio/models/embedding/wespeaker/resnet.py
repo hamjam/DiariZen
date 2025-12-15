@@ -23,8 +23,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from einops import rearrange
 
-from pyannote.audio.models.blocks.pooling import StatsPool
-from pyannote.audio.utils.receptive_field import (
+from diarizen_pyannote.audio.models.blocks.pooling import StatsPool
+from diarizen_pyannote.audio.utils.receptive_field import (
     conv1d_num_frames,
     conv1d_receptive_field_center,
     conv1d_receptive_field_size,

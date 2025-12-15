@@ -47,7 +47,7 @@ class MultiLabelSegmentation(Pipeline):
     ----------
     segmentation : Model, str, or dict
         Pretrained multi-label segmentation model.
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     fscore : bool, optional
         Optimize for average (precision/recall) fscore, over all classes.
         Defaults to optimizing identification error rate.
@@ -126,7 +126,7 @@ class MultiLabelSegmentation(Pipeline):
                 }
             )
 
-    # needed by pyannote.audio Prodigy recipes
+    # needed by diarizen_pyannote.audio Prodigy recipes
     def classes(self):
         return self._classes
 

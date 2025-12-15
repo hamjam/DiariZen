@@ -27,12 +27,12 @@ import torch
 import torch.nn as nn
 from torchaudio.transforms import MFCC
 
-from pyannote.audio.core.model import Model
-from pyannote.audio.core.task import Task
-from pyannote.audio.models.blocks.pooling import StatsPool
-from pyannote.audio.models.blocks.sincnet import SincNet
-from pyannote.audio.utils.params import merge_dict
-from pyannote.audio.utils.receptive_field import (
+from diarizen_pyannote.audio.core.model import Model
+from diarizen_pyannote.audio.core.task import Task
+from diarizen_pyannote.audio.models.blocks.pooling import StatsPool
+from diarizen_pyannote.audio.models.blocks.sincnet import SincNet
+from diarizen_pyannote.audio.utils.params import merge_dict
+from diarizen_pyannote.audio.utils.receptive_field import (
     conv1d_num_frames,
     conv1d_receptive_field_center,
     conv1d_receptive_field_size,

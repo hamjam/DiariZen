@@ -1,5 +1,5 @@
 # @package _group_
-_target_: pyannote.audio.models.segmentation.PyanNet
+_target_: diarizen_pyannote.audio.models.segmentation.PyanNet
 sincnet:
   stride: 10
 lstm:

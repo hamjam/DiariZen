@@ -89,7 +89,7 @@ class OverlappedSpeechDetection(Pipeline):
     segmentation : Model, str, or dict, optional
         Pretrained segmentation (or overlapped speech detection) model.
         Defaults to "pyannote/segmentation".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     precision : float, optional
         Optimize recall at target precision.
         Defaults to optimize precision/recall fscore.

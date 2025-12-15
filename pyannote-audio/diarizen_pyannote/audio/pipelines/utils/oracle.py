@@ -25,7 +25,7 @@ from typing import Optional, Union
 import numpy as np
 from pyannote.core import Annotation, Segment, SlidingWindow, SlidingWindowFeature
 
-from pyannote.audio.core.io import Audio, AudioFile
+from diarizen_pyannote.audio.core.io import Audio, AudioFile
 
 
 def oracle_segmentation(

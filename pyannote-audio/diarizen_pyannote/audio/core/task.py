@@ -47,8 +47,8 @@ from torch_audiomentations import Identity
 from torch_audiomentations.core.transforms_interface import BaseWaveformTransform
 from torchmetrics import Metric, MetricCollection
 
-from pyannote.audio.utils.loss import binary_cross_entropy, nll_loss
-from pyannote.audio.utils.protocol import check_protocol
+from diarizen_pyannote.audio.utils.loss import binary_cross_entropy, nll_loss
+from diarizen_pyannote.audio.utils.protocol import check_protocol
 
 Subsets = list(Subset.__args__)
 Scopes = list(Scope.__args__)

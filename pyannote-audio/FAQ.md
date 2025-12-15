@@ -4,7 +4,7 @@
 - [Can I use gated models (and pipelines) offline?](#can-i-use-gated-models-(and-pipelines)-offline)
 - [Does pyannote support streaming speaker diarization?](#does-pyannote-support-streaming-speaker-diarization)
 - [How can I improve performance?](#how-can-i-improve-performance)
-- [How does one spell and pronounce pyannote.audio?](#how-does-one-spell-and-pronounce-pyannoteaudio)
+- [How does one spell and pronounce diarizen_pyannote.audio?](#how-does-one-spell-and-pronounce-pyannoteaudio)
 
 <a name="can-i-apply-pretrained-pipelines-on-audio-already-loaded-in-memory"></a>
 ## Can I apply pretrained pipelines on audio already loaded in memory?
@@ -43,7 +43,7 @@ That being said, this whole authentication process does not prevent you from usi
 **Also:** [I am available](https://herve.niderb.fr) for contracting to help you with that.
 
 <a name="how-does-one-spell-and-pronounce-pyannoteaudio"></a>
-## How does one spell and pronounce pyannote.audio?
+## How does one spell and pronounce diarizen_pyannote.audio?
 
 📝 Written in lower case: `pyannote.audio` (or `pyannote` if you are lazy). Not `PyAnnote` nor `PyAnnotate` (sic).
 📢 Pronounced like the french verb `pianoter`. `pi` like in `pi`ano, not `py` like in `py`thon.

@@ -83,7 +83,7 @@ HF_PYTORCH_WEIGHTS_NAME = "pytorch_model.bin"
 HF_LIGHTNING_CONFIG_NAME = "config.yaml"
 
 
-# NOTE: needed to backward compatibility to load models trained before pyannote.audio 3.x
+# NOTE: needed to backward compatibility to load models trained before diarizen_pyannote.audio 3.x
 class Introspection:
     pass
 
@@ -130,7 +130,7 @@ def average_states(
 
 
 class Model(nn.Module):
-    """ A simple model wrapper to pyannote.audio.core.model
+    """ A simple model wrapper to diarizen_pyannote.audio.core.model
     
     See: https://github.com/pyannote/pyannote-audio/blob/develop/pyannote/audio/core/model.py
     """

@@ -25,7 +25,7 @@ from typing import List, Mapping, Optional, Text, Union
 from pytorch_lightning import Callback, Trainer
 from pytorch_lightning.utilities.model_summary import ModelSummary
 
-from pyannote.audio import Model
+from diarizen_pyannote.audio import Model
 
 
 class GraduallyUnfreeze(Callback):

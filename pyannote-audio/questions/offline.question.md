@@ -2,7 +2,7 @@
 title: "Can I use gated models (and pipelines) offline?"
 alt_titles:
   - "Why does one need to authenticate to access the pretrained models?"
-  - "Can I use pyannote.audio pretrained pipelines without the Hugginface token?"
+  - "Can I use diarizen_pyannote.audio pretrained pipelines without the Hugginface token?"
   - "How can I solve the permission issue?"
 ---
 

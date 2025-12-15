@@ -29,9 +29,9 @@ import torchaudio.compliance.kaldi as kaldi
 
 import pytorch_lightning as pl
 
-from pyannote.audio.core.model import Model
-from pyannote.audio.core.task import Task
-from pyannote.audio.utils.receptive_field import (
+from diarizen_pyannote.audio.core.model import Model
+from diarizen_pyannote.audio.core.task import Task
+from diarizen_pyannote.audio.utils.receptive_field import (
     conv1d_num_frames,
     conv1d_receptive_field_center,
     conv1d_receptive_field_size,

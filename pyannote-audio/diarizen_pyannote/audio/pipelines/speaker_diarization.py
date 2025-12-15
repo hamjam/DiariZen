@@ -62,19 +62,19 @@ class SpeakerDiarization(SpeakerDiarizationMixin, Pipeline):
     ----------
     segmentation : Model, str, or dict, optional
         Pretrained segmentation model. Defaults to "pyannote/segmentation@2022.07".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     segmentation_step: float, optional
         The segmentation model is applied on a window sliding over the whole audio file.
         `segmentation_step` controls the step of this window, provided as a ratio of its
         duration. Defaults to 0.1 (i.e. 90% overlap between two consecuive windows).
     embedding : Model, str, or dict, optional
         Pretrained embedding model. Defaults to "pyannote/embedding@2022.07".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     embedding_exclude_overlap : bool, optional
         Exclude overlapping speech regions when extracting embeddings.
         Defaults (False) to use the whole speech.
     clustering : str, optional
-        Clustering algorithm. See pyannote.audio.pipelines.clustering.Clustering
+        Clustering algorithm. See diarizen_pyannote.audio.pipelines.clustering.Clustering
         for available options. Defaults to "AgglomerativeClustering".
     segmentation_batch_size : int, optional
         Batch size used for speaker segmentation. Defaults to 1.

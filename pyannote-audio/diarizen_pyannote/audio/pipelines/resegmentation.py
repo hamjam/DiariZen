@@ -60,7 +60,7 @@ class Resegmentation(SpeakerDiarizationMixin, Pipeline):
     ----------
     segmentation : Model, str, or dict, optional
         Pretrained segmentation model. Defaults to "pyannote/segmentation".
-        See pyannote.audio.pipelines.utils.get_model for supported format.
+        See diarizen_pyannote.audio.pipelines.utils.get_model for supported format.
     diarization : str, optional
         File key to use as input diarization. Defaults to "diarization".
     der_variant : dict, optional

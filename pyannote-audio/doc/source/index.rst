@@ -11,7 +11,7 @@ Installation
 
   $ conda create -n pyannote python=3.10
   $ conda activate pyannote
-  $ pip install pyannote.audio
+  $ pip install diarizen_pyannote.audio
 
 
 API documentation
