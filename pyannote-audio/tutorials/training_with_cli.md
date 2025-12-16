@@ -27,8 +27,8 @@ pyannote-audio-train \
 ... which is more or less equivalent to running the following Python script:
 
 ```python
-from pyannote.audio.tasks import VoiceActivityDetection
-from pyannote.audio.models.segmentation import PyanNet
+from diarizen_pyannote.audio.tasks import VoiceActivityDetection
+from diarizen_pyannote.audio.models.segmentation import PyanNet
 from pyannote.database import registry, FileFinder()
 from pytorch_lightning import Trainer
 
@@ -54,9 +54,9 @@ pyannote-audio-eval \
 ```python
 from pyannote.database import FileFinder, ProtocolFile, registry
 
-from pyannote.audio import Inference, Model
-from pyannote.audio.utils.metric import DiscreteDiarizationErrorRate
-from pyannote.audio.utils.signal import binarize
+from diarizen_pyannote.audio import Inference, Model
+from diarizen_pyannote.audio.utils.metric import DiscreteDiarizationErrorRate
+from diarizen_pyannote.audio.utils.signal import binarize
 
 model = Model.from_pretrained("path_to_checkpoint.ckpt")
 
@@ -100,7 +100,7 @@ pyannote-audio-train --cfg job \
 
 ```yaml
 task:
-  _target_: pyannote.audio.tasks.VoiceActivityDetection
+  _target_: diarizen_pyannote.audio.tasks.VoiceActivityDetection
   duration: 3.0
   warm_up: 0.0
   balance: null

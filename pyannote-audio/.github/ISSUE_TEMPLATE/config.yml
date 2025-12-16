@@ -8,8 +8,8 @@ contact_links:
 
   - name: Consulting
     url: https://herve.niderb.fr/consulting
-    about: Using pyannote.audio in production? Make the most of it thanks to our consulting services.
+    about: Using diarizen_pyannote.audio in production? Make the most of it thanks to our consulting services.
 
   - name: Premium models
     url: https://forms.office.com/e/GdqwVgkZ5C
-    about: We are considering selling premium models, extensions, or services around pyannote.audio.
+    about: We are considering selling premium models, extensions, or services around diarizen_pyannote.audio.

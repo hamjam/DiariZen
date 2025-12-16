@@ -22,7 +22,7 @@
 
 import torch
 
-from pyannote.audio.models.blocks.pooling import StatsPool
+from diarizen_pyannote.audio.models.blocks.pooling import StatsPool
 
 
 def test_stats_pool_weightless():

@@ -3,7 +3,7 @@ import torchaudio
 from pyannote.core import Segment
 from torch import Tensor
 
-from pyannote.audio.core.io import Audio
+from diarizen_pyannote.audio.core.io import Audio
 
 
 def test_audio_resample():

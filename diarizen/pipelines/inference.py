@@ -15,8 +15,8 @@ import torchaudio
 from scipy.ndimage import median_filter
 
 from huggingface_hub import snapshot_download, hf_hub_download
-from pyannote.audio.pipelines import SpeakerDiarization as SpeakerDiarizationPipeline
-from pyannote.audio.utils.signal import Binarize
+from diarizen_pyannote.audio.pipelines import SpeakerDiarization as SpeakerDiarizationPipeline
+from diarizen_pyannote.audio.utils.signal import Binarize
 from pyannote.database.protocol.protocol import ProtocolFile
 
 from diarizen.pipelines.utils import scp2path

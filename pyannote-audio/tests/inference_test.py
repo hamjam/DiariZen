@@ -4,10 +4,10 @@ import pytorch_lightning as pl
 from pyannote.core import SlidingWindowFeature
 from pyannote.database import FileFinder, get_protocol
 
-from pyannote.audio import Inference, Model
-from pyannote.audio.core.task import Resolution
-from pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
-from pyannote.audio.tasks import VoiceActivityDetection
+from diarizen_pyannote.audio import Inference, Model
+from diarizen_pyannote.audio.core.task import Resolution
+from diarizen_pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
+from diarizen_pyannote.audio.tasks import VoiceActivityDetection
 
 HF_SAMPLE_MODEL_ID = "pyannote/ci-segmentation"
 

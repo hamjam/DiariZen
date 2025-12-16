@@ -1,4 +1,4 @@
-from pyannote.audio.core.model import Model
+from diarizen_pyannote.audio.core.model import Model
 
 
 def test_import_lib():

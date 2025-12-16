@@ -2,8 +2,8 @@ import torch
 from lightning.pytorch import seed_everything
 from pyannote.database import FileFinder, get_protocol
 
-from pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
-from pyannote.audio.tasks import VoiceActivityDetection
+from diarizen_pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
+from diarizen_pyannote.audio.tasks import VoiceActivityDetection
 
 
 def setup_tasks(task):

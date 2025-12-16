@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from pyannote.audio.utils.probe import probe
+from diarizen_pyannote.audio.utils.probe import probe
 
 
 class Trunk(nn.Module):

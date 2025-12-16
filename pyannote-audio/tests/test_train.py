@@ -27,9 +27,9 @@ import pytest
 from pyannote.database import FileFinder, get_protocol
 from pytorch_lightning import Trainer
 
-from pyannote.audio.models.embedding.debug import SimpleEmbeddingModel
-from pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
-from pyannote.audio.tasks import (
+from diarizen_pyannote.audio.models.embedding.debug import SimpleEmbeddingModel
+from diarizen_pyannote.audio.models.segmentation.debug import SimpleSegmentationModel
+from diarizen_pyannote.audio.tasks import (
     MultiLabelSegmentation,
     OverlappedSpeechDetection,
     SpeakerDiarization,

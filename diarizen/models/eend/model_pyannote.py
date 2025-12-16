@@ -12,9 +12,9 @@ from einops import rearrange
 
 from functools import lru_cache
 
-from pyannote.audio.core.model import Model as BaseModel
-from pyannote.audio.models.blocks.sincnet import SincNet
-from pyannote.audio.utils.receptive_field import (
+from diarizen_pyannote.audio.core.model import Model as BaseModel
+from diarizen_pyannote.audio.models.blocks.sincnet import SincNet
+from diarizen_pyannote.audio.utils.receptive_field import (
     multi_conv_num_frames, 
     multi_conv_receptive_field_size, 
     multi_conv_receptive_field_center

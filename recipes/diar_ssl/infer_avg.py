@@ -15,8 +15,8 @@ import torchaudio
 from scipy.ndimage import median_filter
 
 from pyannote.metrics.segmentation import Annotation, Segment
-from pyannote.audio.pipelines import SpeakerDiarization as SpeakerDiarizationPipeline
-from pyannote.audio.utils.signal import Binarize
+from diarizen_pyannote.audio.pipelines import SpeakerDiarization as SpeakerDiarizationPipeline
+from diarizen_pyannote.audio.utils.signal import Binarize
 
 from diarizen.ckpt_utils import load_metric_summary
 

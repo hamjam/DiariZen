@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from pyannote.audio.utils.permutation import permutate
+from diarizen_pyannote.audio.utils.permutation import permutate
 
 
 def test_permutate_torch():

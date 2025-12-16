@@ -23,7 +23,7 @@
 import pytest
 import torch
 
-from pyannote.audio.torchmetrics.functional.audio.diarization_error_rate import (
+from diarizen_pyannote.audio.torchmetrics.functional.audio.diarization_error_rate import (
     _der_update,
     diarization_error_rate,
 )

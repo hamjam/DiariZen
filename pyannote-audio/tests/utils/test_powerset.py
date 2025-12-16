@@ -23,7 +23,7 @@
 
 import torch
 
-from pyannote.audio.utils.powerset import Powerset
+from diarizen_pyannote.audio.utils.powerset import Powerset
 
 
 def test_roundtrip():
